@@ -75,8 +75,7 @@ public class StepActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onStop() {
         super.onStop();
-        mSensorManager.unregisterListener(this, mStepCounterSensor);
-        mSensorManager.unregisterListener(this, mStepDetectorSensor);
+
     }
     @Override
     public void onSensorChanged(SensorEvent event) {
